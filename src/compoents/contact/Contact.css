@@ -1,0 +1,52 @@
+.contact-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 10%;
+  margin-top: 3rem;
+  padding-bottom: 1rem;
+}
+.contact-options {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+.contact-option {
+  background: var(--color-bg-variant);
+  padding: 1.2rem;
+  border-radius: 1.2rem;
+  text-align: center;
+  border: 1px solid transparent;
+  transition: var(--transition);
+}
+.contact-option:hover {
+  background: transparent;
+  border-color: var(--color-bg-variant);
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.5),
+    inset -5px -5px 5px rgba(0, 0, 0, 0.5);
+}
+.contact-icon {
+  margin-bottom: 0.5rem;
+  font-size: 1.5rem;
+}
+.contact-option a {
+  margin-top: 0.7rem;
+  display: inline-block;
+  font-size: 0.8rem;
+}
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 1.5rem;
+  border-radius: 0.5rem;
+  background: transparent;
+  border: 2px solid var(--color-bg-variant);
+  box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.5),
+    inset -5px -5px 5px rgba(0, 0, 0, 0.5);
+  color: white;
+  resize: none;
+}

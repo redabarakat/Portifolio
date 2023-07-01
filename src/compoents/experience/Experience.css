@@ -1,0 +1,53 @@
+.experience-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+.experience-container h3 {
+  text-align: center;
+  margin-bottom: 0.5rem;
+  color: var(--color-primary);
+  font-weight: bold;
+  font-size: 22px;
+  letter-spacing: 1px;
+  background-image: linear-gradient(
+    45deg,
+    rgba(255, 255, 255, 0.2),
+    rgba(255, 255, 255, 0.2)
+  );
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  -ms-border-radius: 10px;
+  -o-border-radius: 10px;
+}
+.experience-details {
+  box-shadow: inset -5px -5px 10px rgba(0, 0, 0, 0.5),
+    inset 5px 5px 5px rgba(255, 255, 255, 0.3);
+  padding: 0.8rem;
+  border-radius: 10px;
+  margin-bottom: 0.5rem;
+  position: relative;
+  /* background-image: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.2) 85%,
+    rgba(255, 255, 255, 0.2) 85%
+  ); */
+}
+.experience-details .icon {
+  font-size: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+.experience-details > div {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+}
+.experience-details > div > img {
+  width: 50px;
+  height: 50px;
+}
